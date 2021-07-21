@@ -1,0 +1,56 @@
+
+.tituloInicio {
+    text-align: center;
+    color: white;
+    line-height: 5px;
+    margin-top: 25px;
+    font-family: 'Signika', sans-serif;
+    p {
+        text-align: center;
+        color: orange;
+        font-size: 48px;
+        margin-top: 40px;
+        font-family: 'Signika', sans-serif;}
+}
+
+#descripcionJuego {
+    font-size: 20px;
+    text-align: center;
+    margin: 75px auto 20px auto;
+    height: auto;
+    width: 70%; 
+}
+#carouselExampleCaptions {
+    height: 563px;
+    width: 1000px;
+    margin: 50px auto 0 auto;
+}
+#androidDescarga {
+    height: 500px;
+    width: 90%;
+    background-image:url("../Estilo/androidDescarga.jpg");
+    background-repeat: round;
+    margin: 50px auto 50px auto;
+}
+#androidButton {
+    margin: 200px 0 0 1050px;
+} 
+  
+.resenias {
+    display: flex;
+    height: 600px;
+    width: 1000px;
+    justify-content: space-evenly;
+    margin: 50px auto 50px auto;
+    
+    .resenias__contenedor{
+        background-color: rgb(7, 7, 46);
+        border-radius: 1px;
+        border-style: solid;
+        border-color: orange;
+    }
+    .resenias__listas {
+        background-color: rgb(7, 7, 46);
+        color: white;
+    }
+}

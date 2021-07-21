@@ -1,0 +1,265 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif; }
+
+body {
+  background-color: #1f1f41; }
+
+/*-----------------Menu----------------------*/
+.menu__item {
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  width: 20%; }
+
+a {
+  color: #d66b12;
+  text-decoration: none; }
+
+.menu__lista {
+  list-style-type: none;
+  color: #d66b12;
+  display: flex;
+  width: 600px;
+  height: 80px;
+  background-color: #22222c;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto 0 auto;
+  border-radius: 1px;
+  border-style: solid;
+  border-color: #090d33;
+  border-top: none;
+  position: sticky;
+  z-index: 9999; }
+
+.tituloInicio {
+  text-align: center;
+  color: white;
+  line-height: 5px;
+  margin-top: 25px;
+  font-family: 'Signika', sans-serif; }
+  .tituloInicio p {
+    text-align: center;
+    color: orange;
+    font-size: 48px;
+    margin-top: 40px;
+    font-family: 'Signika', sans-serif; }
+
+#descripcionJuego {
+  font-size: 20px;
+  text-align: center;
+  margin: 75px auto 20px auto;
+  height: auto;
+  width: 70%; }
+
+#carouselExampleCaptions {
+  height: 563px;
+  width: 1000px;
+  margin: 50px auto 0 auto; }
+
+#androidDescarga {
+  height: 500px;
+  width: 90%;
+  background-image: url("../Estilo/androidDescarga.jpg");
+  background-repeat: round;
+  margin: 50px auto 50px auto; }
+
+#androidButton {
+  margin: 200px 0 0 1050px; }
+
+.resenias {
+  display: flex;
+  height: 600px;
+  width: 1000px;
+  justify-content: space-evenly;
+  margin: 50px auto 50px auto; }
+  .resenias .resenias__contenedor {
+    background-color: #07072e;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: orange; }
+  .resenias .resenias__listas {
+    background-color: #07072e;
+    color: white; }
+
+/*----------------------Footer----------------------*/
+footer {
+  background-image: linear-gradient(rgba(11, 5, 31, 0.568), #13133d);
+  height: 100px;
+  width: 100%;
+  border-radius: 1px;
+  border-style: solid;
+  border-color: #244747; }
+
+.footer__contenedor {
+  display: flex;
+  height: 45px;
+  width: 30%;
+  justify-content: start;
+  align-items: center;
+  /*
+    .footer__imagen {
+        @include tamaniosImagen (44px, 44px);
+        padding-top: 8px;
+    }
+    #whatsApp {
+        @include tamaniosImagen (36px, 36px);
+        padding-top: 8px;
+        padding-left: 8px;
+    }
+    
+    @mixin tamaniosImagen ($anchoImagen, $altoImagen) {
+        widht: $anchoImagen;
+        height: $altoImagen;
+    }*/ }
+  .footer__contenedor .footer__texto {
+    height: 44px;
+    width: 50px;
+    padding-top: 28px;
+    padding-left: 8px;
+    color: white; }
+
+/*----------------------Descargar----------------------*/
+.descarga {
+  display: flex;
+  height: 500px;
+  width: 80%;
+  margin: 100px auto 0 auto;
+  justify-content: start; }
+  .descarga .descarga__imagen {
+    border-style: solid;
+    border-radius: 1px;
+    border-color: #b8b3b3;
+    height: 385px; }
+  .descarga .descarga__descripcion {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-bottom: 100px; }
+  .descarga .descripcion__buttom {
+    height: 50px;
+    width: 150px; }
+
+.separador {
+  width: 1000px;
+  height: 10px;
+  color: white;
+  margin: 0 auto 50px auto; }
+
+.screenshots {
+  display: flex;
+  height: 253px;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: 0 auto 50px auto; }
+  .screenshots .screenshots__imagenes {
+    border-radius: 1px;
+    border-color: #c5c3c3;
+    border-style: solid; }
+
+.reseniasUsuarios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 1100px;
+  height: auto;
+  margin: 0 auto 50px auto; }
+
+.reseniasUsuarios__texto {
+  background-color: black; }
+
+/*--------------------DECKS----------------------------*/
+#decksGridPadre {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 220px 220px 220px;
+  grid-template-areas: "texto imagenes" "texto imagenes" "texto imagenes";
+  justify-items: center;
+  align-items: center; }
+
+.imagenesDecks:hover {
+  height: 188px;
+  width: 300px;
+  grid-area: "imagenes";
+  transform: scale(1.1, 1);
+  border-radius: 1px;
+  border-color: rgba(223, 219, 219, 0.404);
+  border-style: solid; }
+
+#descripcionDecks {
+  grid-area: texto; }
+
+#textoDecks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+#subtextoDecks {
+  margin-top: 50px;
+  font-size: 20px; }
+
+#subtituloDecks {
+  font-size: 30px;
+  color: #b67807; }
+
+/*----------------------Tutorial----------------------*/
+.descripcion {
+  text-align: center;
+  font-size: 20px;
+  width: 80%;
+  margin: 0 auto 0 auto; }
+
+.titulos {
+  color: #db920b;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 3% 0 3% 0; }
+
+.parches {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "cartas cambios" "cartas cambios" "cartas cambios" "cartas cambios";
+  height: 1500px;
+  width: 1000px;
+  margin: 3% auto 0 auto;
+  row-gap: 3%; }
+  .parches .parches__imagenes {
+    grid-area: "cartas"; }
+  .parches .parches__cambios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    grid-area: "cambios"; }
+    .parches .parches__cambios .parches__subtitulos {
+      color: #db920b;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+/*----------Contacto--------------*/
+#sectionContacto {
+  display: flex;
+  flex-direction: row;
+  margin: 100px auto 0px auto;
+  justify-content: space-between;
+  height: 470px;
+  width: 1300px; }
+
+#descripcionContacto {
+  text-align: center;
+  width: 500px; }
+
+#formPadre {
+  height: 400px;
+  width: 700px; }
+
+#formTitle {
+  margin-bottom: 50px; }

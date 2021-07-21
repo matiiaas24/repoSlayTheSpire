@@ -1,0 +1,21 @@
+/*----------Contacto--------------*/
+#sectionContacto {
+    display: flex;
+    flex-direction: row;
+    margin: 100px auto 0px auto;
+    justify-content: space-between;
+    height: 470px;
+    width: 1300px;    
+}
+#descripcionContacto {
+    text-align: center;
+    width: 500px;
+
+}
+#formPadre{
+    height: 400px;
+    width: 700px;
+}
+#formTitle {
+    margin-bottom: 50px;
+}

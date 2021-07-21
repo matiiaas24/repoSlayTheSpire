@@ -1,0 +1,39 @@
+/*--------------------DECKS----------------------------*/
+#decksGridPadre {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 220px 220px 220px;
+    grid-template-areas: "texto imagenes"
+                         "texto imagenes"
+                         "texto imagenes";
+    justify-items: center;
+    align-items: center;
+}
+.imagenesDecks:hover {
+    height: 188px;
+    width: 300px;
+    grid-area: "imagenes";
+    transform: scale(1.1, 1);
+    border-radius: 1px;
+    border-color: rgba(223, 219, 219, 0.404);
+    border-style: solid;
+    
+}
+#descripcionDecks {
+    grid-area: texto;
+}
+#textoDecks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#subtextoDecks {
+    margin-top: 50px;
+    font-size: 20px;
+}
+#subtituloDecks {
+    font-size: 30px;
+    color: rgb(182, 120, 7);
+}

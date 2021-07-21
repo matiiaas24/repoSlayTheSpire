@@ -1,0 +1,30 @@
+/*-----------------Menu----------------------*/
+.menu__item {
+    font-size: 20px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 20%;
+ }
+ a { color: rgb(214, 107, 18);
+    text-decoration: none;   
+}
+
+    
+
+.menu__lista {
+    list-style-type: none;
+    color: rgb(214, 107, 18);
+    display: flex;
+    width: 600px;
+    height: 80px;
+    background-color: rgb(34, 34, 44);
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: rgb(9, 13, 51);
+    border-top: none;
+    position: sticky;
+    z-index: 9999;
+}

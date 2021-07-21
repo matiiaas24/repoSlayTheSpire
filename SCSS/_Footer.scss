@@ -1,0 +1,40 @@
+/*----------------------Footer----------------------*/
+footer {
+    background-image: linear-gradient(rgba(11, 5, 31, 0.568), rgb(19, 19, 61));
+    height: 100px;
+    width: 100%;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: rgb(36, 71, 71);
+}
+.footer__contenedor {
+    display: flex;
+    height: 45px;
+    width: 30%;
+    justify-content: start;
+    align-items: center;
+    .footer__texto {
+        height: 44px;
+        width: 50px;
+        padding-top: 28px;
+        padding-left: 8px;
+        color: white;
+    }
+    /*
+    .footer__imagen {
+        @include tamaniosImagen (44px, 44px);
+        padding-top: 8px;
+    }
+    #whatsApp {
+        @include tamaniosImagen (36px, 36px);
+        padding-top: 8px;
+        padding-left: 8px;
+    }
+    
+    @mixin tamaniosImagen ($anchoImagen, $altoImagen) {
+        widht: $anchoImagen;
+        height: $altoImagen;
+    }*/
+}
+
+
