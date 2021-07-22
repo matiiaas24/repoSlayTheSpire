@@ -1,13 +1,24 @@
-*{  margin: 0px;
+/*----------------Generales--------------------*/
+* {
+    margin: 0px;
     padding: 0px;
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
 }
-body {background-color: rgb(31, 31, 65);}
+p {
+    color: rgb(240, 239, 239);
+    font-family: 'Nunito Sans', sans-serif;
+}  
+  body {
+    background-color: #1f1f41; }
+
+h3 {
+    color: rgb(240, 239, 239);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 @import "_Menu.scss";
 @import "_Index.scss";
 @import "_Footer.scss";
 @import "_Descargas.scss";
 @import "_Decks.scss";
 @import "_Parche.scss";
-@import "_Contacto.scss";
+@import "_Soporte.scss";

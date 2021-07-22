@@ -9,7 +9,7 @@
     color: rgb(219, 146, 11);
     text-align: center;
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cinzel', serif;
     margin: 3% 0 3% 0;
 }
 .parches {
@@ -33,9 +33,10 @@
         align-items: flex-start;
         justify-content: space-evenly;
         grid-area: "cambios";
+        font-size: 20px;
         .parches__subtitulos {
             color: rgb(219, 146, 11);
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: 'Cinzel', serif;
         }
     }
 }

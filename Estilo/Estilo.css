@@ -1,16 +1,23 @@
+/*----------------Generales--------------------*/
 * {
   margin: 0px;
-  padding: 0px;
-  color: white;
-  font-family: 'Josefin Sans', sans-serif; }
+  padding: 0px; }
+
+p {
+  color: #f0efef;
+  font-family: 'Nunito Sans', sans-serif; }
 
 body {
   background-color: #1f1f41; }
 
+h3 {
+  color: #f0efef;
+  font-family: 'Nunito Sans', sans-serif; }
+
 /*-----------------Menu----------------------*/
 .menu__item {
   font-size: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Cinzel', serif;
   text-align: center;
   width: 20%; }
 
@@ -22,7 +29,7 @@ a {
   list-style-type: none;
   color: #d66b12;
   display: flex;
-  width: 600px;
+  width: 60%;
   height: 80px;
   background-color: #22222c;
   justify-content: space-evenly;
@@ -40,13 +47,13 @@ a {
   color: white;
   line-height: 5px;
   margin-top: 25px;
-  font-family: 'Signika', sans-serif; }
+  font-family: 'Cinzel', serif; }
   .tituloInicio p {
     text-align: center;
     color: orange;
     font-size: 48px;
     margin-top: 40px;
-    font-family: 'Signika', sans-serif; }
+    font-family: 'Cinzel', serif; }
 
 #descripcionJuego {
   font-size: 20px;
@@ -88,39 +95,28 @@ a {
 /*----------------------Footer----------------------*/
 footer {
   background-image: linear-gradient(rgba(11, 5, 31, 0.568), #13133d);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   height: 100px;
   width: 100%;
   border-radius: 1px;
   border-style: solid;
   border-color: #244747; }
-
-.footer__contenedor {
-  display: flex;
-  height: 45px;
-  width: 30%;
-  justify-content: start;
-  align-items: center;
-  /*
-    .footer__imagen {
-        @include tamaniosImagen (44px, 44px);
-        padding-top: 8px;
-    }
-    #whatsApp {
-        @include tamaniosImagen (36px, 36px);
-        padding-top: 8px;
-        padding-left: 8px;
-    }
-    
-    @mixin tamaniosImagen ($anchoImagen, $altoImagen) {
-        widht: $anchoImagen;
-        height: $altoImagen;
-    }*/ }
-  .footer__contenedor .footer__texto {
-    height: 44px;
-    width: 50px;
-    padding-top: 28px;
-    padding-left: 8px;
-    color: white; }
+  footer .footer__texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 20%;
+    color: blanchedalmond;
+    text-align: center; }
+  footer .footer__imagenes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    height: 44px; }
 
 /*----------------------Descargar----------------------*/
 .descarga {
@@ -140,7 +136,9 @@ footer {
     flex-direction: column;
     align-items: start;
     justify-content: space-evenly;
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    font-size: 25px;
+    color: #f0efef; }
   .descarga .descripcion__buttom {
     height: 50px;
     width: 150px; }
@@ -149,7 +147,7 @@ footer {
   width: 1000px;
   height: 10px;
   color: white;
-  margin: 0 auto 50px auto; }
+  margin: 0 auto 0 auto; }
 
 .screenshots {
   display: flex;
@@ -174,40 +172,29 @@ footer {
   background-color: black; }
 
 /*--------------------DECKS----------------------------*/
-#decksGridPadre {
+.multimedia {
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 220px 220px 220px;
-  grid-template-areas: "texto imagenes" "texto imagenes" "texto imagenes";
-  justify-items: center;
-  align-items: center; }
+  grid-template-columns: 1fr 1fr 1 fr;
+  grid-template-rows: 195px 40px 40px;
+  grid-template-areas: "imagenes imagenes imagenes" "subtitulo subtitulo subtitulo" "button button button";
+  height: 370px;
+  width: 80%;
+  margin: 2% auto 10% auto;
+  justify-items: center; }
+  .multimedia .multimedia__imagenes {
+    grid-area: "imagenes"; }
+  .multimedia .multimedia__subtitulos {
+    grid-area: "subtitulo";
+    font-size: 20px; }
+  .multimedia .multimedia__buttons {
+    grid-area: "button"; }
 
-.imagenesDecks:hover {
-  height: 188px;
-  width: 300px;
-  grid-area: "imagenes";
-  transform: scale(1.1, 1);
-  border-radius: 1px;
-  border-color: rgba(223, 219, 219, 0.404);
-  border-style: solid; }
-
-#descripcionDecks {
-  grid-area: texto; }
-
-#textoDecks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center; }
-
-#subtextoDecks {
-  margin-top: 50px;
-  font-size: 20px; }
-
-#subtituloDecks {
+.titulosMultimedia {
   font-size: 30px;
-  color: #b67807; }
+  width: 80%;
+  margin: 5% auto 1% auto;
+  color: #e0dddd;
+  font-family: 'Cinzel', serif; }
 
 /*----------------------Tutorial----------------------*/
 .descripcion {
@@ -220,7 +207,7 @@ footer {
   color: #db920b;
   text-align: center;
   font-size: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Cinzel', serif;
   margin: 3% 0 3% 0; }
 
 .parches {
@@ -239,27 +226,31 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    grid-area: "cambios"; }
+    grid-area: "cambios";
+    font-size: 20px; }
     .parches .parches__cambios .parches__subtitulos {
       color: #db920b;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+      font-family: 'Cinzel', serif; }
 
 /*----------Contacto--------------*/
-#sectionContacto {
+.soporte {
   display: flex;
   flex-direction: row;
   margin: 100px auto 0px auto;
   justify-content: space-between;
   height: 470px;
   width: 1300px; }
-
-#descripcionContacto {
-  text-align: center;
-  width: 500px; }
+  .soporte .soporte__descripcion {
+    text-align: center;
+    width: 500px;
+    color: #f0efef;
+    font-family: 'Cinzel', serif; }
 
 #formPadre {
   height: 400px;
-  width: 700px; }
+  width: 700px;
+  color: #f0efef; }
 
 #formTitle {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  color: #f0efef; }
