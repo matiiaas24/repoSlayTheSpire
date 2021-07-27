@@ -1,5 +1,6 @@
 /*--------------------DECKS----------------------------*/
 .multimedia {
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1 fr;
     grid-template-rows: 195px 40px 40px;
@@ -10,12 +11,15 @@
     width: 80%;
     margin: 2% auto 10% auto;
     justify-items: center;
+    
+    
     .multimedia__imagenes {
         grid-area: "imagenes";
     }
     .multimedia__subtitulos {
         grid-area: "subtitulo";
         font-size: 20px;
+       
     }                
     .multimedia__buttons {
         grid-area: "button";

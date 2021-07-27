@@ -1,7 +1,10 @@
 /*----------------Generales--------------------*/
+$margin-center: 0 auto 0 auto;
+
+
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 p {
     color: rgb(240, 239, 239);
@@ -13,6 +16,9 @@ p {
 h3 {
     color: rgb(240, 239, 239);
     font-family: 'Nunito Sans', sans-serif;
+}
+img {
+    max-width: 100%;
 }
 
 @import "_Menu.scss";
