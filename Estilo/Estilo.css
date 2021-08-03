@@ -253,28 +253,29 @@ footer {
       color: #db920b;
       font-family: 'Cinzel', serif; }
 
-/*----------Contacto--------------*/
+/*----------Soporte--------------*/
 .soporte {
   display: flex;
   flex-direction: row;
   margin: 100px auto 0px auto;
   justify-content: space-between;
   height: 470px;
-  width: 1300px; }
-  .soporte .soporte__descripcion {
-    text-align: center;
-    width: 500px;
+  width: 80%; }
+
+.soporte__formulario {
+  height: 400px;
+  width: 50%;
+  color: #f0efef; }
+
+.soporte__descripcion {
+  text-align: center;
+  width: 500px;
+  color: #f0efef;
+  font-family: 'Nunito Sans', sans-serif; }
+  .soporte__descripcion .soporte__titulo {
+    margin-bottom: 50px;
     color: #f0efef;
     font-family: 'Cinzel', serif; }
-
-#formPadre {
-  height: 400px;
-  width: 700px;
-  color: #f0efef; }
-
-#formTitle {
-  margin-bottom: 50px;
-  color: #f0efef; }
 
 @media only screen and (max-width: 600px) {
   /*----------Menu----------------*/
@@ -378,3 +379,81 @@ footer {
       justify-content: space-evenly;
       width: 10%;
       height: auto; } }
+
+/*----------------------Parche----------------------*/
+.descripcion {
+  text-align: center;
+  font-size: 1rem;
+  width: 80%;
+  margin: 0 auto 1rem auto; }
+
+.titulos {
+  color: #db920b;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Cinzel', serif;
+  margin: 3% 0 3% 0; }
+
+.parches {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "cartas cambios" "cartas cambios" "cartas cambios" "cartas cambios";
+  height: 85rem;
+  width: 100%;
+  margin: 3% auto 0 auto;
+  row-gap: 3%; }
+  .parches .parches__imagenes {
+    grid-area: "cartas"; }
+  .parches .parches__cambios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    grid-area: "cambios";
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.3rem; }
+    .parches .parches__cambios .parches__subtitulos {
+      color: #db920b;
+      font-family: 'Cinzel', serif; }
+
+/*--------------------Multimedia----------------------------*/
+.multimedia {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr 1fr 1fr);
+  height: 20rem;
+  width: 100%;
+  margin: 1rem auto 0 auto;
+  justify-items: center; }
+
+.titulosMultimedia {
+  font-size: 1.5rem;
+  width: 100%;
+  margin: 1rem auto 0 auto;
+  color: #e0dddd;
+  font-family: 'Cinzel', serif; }
+
+/*-----------Soporte--------------*/
+.soporte {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto 0 auto;
+  justify-content: space-between;
+  height: 40rem;
+  width: 100%; }
+  .soporte .soporte__titulo {
+    margin-bottom: 50px;
+    color: #f0efef;
+    font-family: 'Cinzel', serif; }
+  .soporte .soporte__descripcion {
+    text-align: center;
+    width: 100%;
+    color: #f0efef;
+    font-family: 'Nunito Sans', sans-serif; }
+  .soporte .soporte__formulario {
+    height: 20rem;
+    width: 100%;
+    color: #f0efef; }

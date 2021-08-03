@@ -20,11 +20,15 @@ h3 {
 img {
     max-width: 100%;
 }
+@media only screen and (min-width: 1024px) {
+    
+}
 
 @import "_Menu.scss";
 @import "_Index.scss";
 @import "_Footer.scss";
 @import "_Descargas.scss";
-@import "_Decks.scss";
+@import "_Multimedia.scss";
 @import "_Parche.scss";
 @import "_Soporte.scss";
+@import "_mediasQuerys.scss";
