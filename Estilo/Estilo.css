@@ -267,6 +267,7 @@ footer {
   width: 50%;
   color: #f0efef; }
 
+<<<<<<< HEAD
 .soporte__descripcion {
   text-align: center;
   width: 500px;
@@ -276,6 +277,11 @@ footer {
     margin-bottom: 50px;
     color: #f0efef;
     font-family: 'Cinzel', serif; }
+=======
+#formTitle {
+  margin-bottom: 50px;
+  color: #f0efef; }
+>>>>>>> main
 
 @media only screen and (max-width: 600px) {
   /*----------Menu----------------*/
@@ -379,6 +385,7 @@ footer {
       justify-content: space-evenly;
       width: 10%;
       height: auto; } }
+<<<<<<< HEAD
 
 /*----------------------Parche----------------------*/
 .descripcion {
@@ -457,3 +464,5 @@ footer {
     height: 20rem;
     width: 100%;
     color: #f0efef; }
+=======
+>>>>>>> main
