@@ -8,7 +8,9 @@ p {
   font-family: 'Nunito Sans', sans-serif; }
 
 body {
-  background-color: #1f1f41; }
+  background-image: url("../Imagenes/papyrus-dark.png");
+  background-color: rgba(40, 15, 87, 0.863);
+  background-blend-mode: screen; }
 
 h3 {
   color: #f0efef;
@@ -190,6 +192,11 @@ footer {
     color: white; }
   .reseniasUsuarios .reseniasUsuarios__texto {
     background-color: black; }
+  .reseniasUsuarios h2 {
+    color: white; }
+  .reseniasUsuarios li {
+    color: white;
+    line-height: 2.5rem; }
 
 /*--------------------DECKS----------------------------*/
 .multimedia {
@@ -267,7 +274,6 @@ footer {
   width: 50%;
   color: #f0efef; }
 
-<<<<<<< HEAD
 .soporte__descripcion {
   text-align: center;
   width: 500px;
@@ -277,11 +283,6 @@ footer {
     margin-bottom: 50px;
     color: #f0efef;
     font-family: 'Cinzel', serif; }
-=======
-#formTitle {
-  margin-bottom: 50px;
-  color: #f0efef; }
->>>>>>> main
 
 @media only screen and (max-width: 600px) {
   /*----------Menu----------------*/
@@ -385,7 +386,6 @@ footer {
       justify-content: space-evenly;
       width: 10%;
       height: auto; } }
-<<<<<<< HEAD
 
 /*----------------------Parche----------------------*/
 .descripcion {
@@ -464,5 +464,3 @@ footer {
     height: 20rem;
     width: 100%;
     color: #f0efef; }
-=======
->>>>>>> main

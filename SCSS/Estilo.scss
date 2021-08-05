@@ -11,7 +11,10 @@ p {
     font-family: 'Nunito Sans', sans-serif;
 }  
   body {
-    background-color: #1f1f41; }
+    background-image: url("../Imagenes/papyrus-dark.png");
+    background-color: rgba(40, 15, 87, 0.863);
+    background-blend-mode: screen;
+ }
 
 h3 {
     color: rgb(240, 239, 239);
