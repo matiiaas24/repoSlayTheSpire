@@ -1,35 +1,37 @@
-/*--------------------DECKS----------------------------*/
-.multimedia {
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1 fr;
-    grid-template-rows: 195px 40px 40px;
-    grid-template-areas: "imagenes imagenes imagenes"
-                "subtitulo subtitulo subtitulo"
-                "button button button";
-    height: 370px;
-    width: 80%;
-    margin: 2% auto 10% auto;
-    justify-items: center;
-    
-    
-    .multimedia__imagenes {
-        grid-area: "imagenes";
-    }
-    .multimedia__subtitulos {
-        grid-area: "subtitulo";
-        font-size: 20px;
-       
-    }                
-    .multimedia__buttons {
-        grid-area: "button";
-    }
-}
+/*--------------------Multimedia----------------------------*/
+
 .titulosMultimedia {
     font-size: 30px;
     width: 80%;
     margin: 5% auto 1% auto;
-    color: rgb(224, 221, 221);
+    color: rgba(224, 221, 221, 0.582);
     font-family: 'Cinzel', serif;
+}
+
+.multimedia{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    grid-auto-rows: 20rem;
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    
+
+    .multimedia__container {
+    display: flex;
+    flex-direction: column;
+    height: 17.82rem;
+    width: 18.75rem;
+    justify-content: center;
+    align-items: center;
+
+        .multimedia__subtitulos {
+        text-align: center;
+        width: 100%;
+        }
+        .multimedia__imagenes {
+        height: 300px;
+        }
+    }
+
 }
 

@@ -198,30 +198,32 @@ footer {
     color: white;
     line-height: 2.5rem; }
 
-/*--------------------DECKS----------------------------*/
-.multimedia {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1 fr;
-  grid-template-rows: 195px 40px 40px;
-  grid-template-areas: "imagenes imagenes imagenes" "subtitulo subtitulo subtitulo" "button button button";
-  height: 370px;
-  width: 80%;
-  margin: 2% auto 10% auto;
-  justify-items: center; }
-  .multimedia .multimedia__imagenes {
-    grid-area: "imagenes"; }
-  .multimedia .multimedia__subtitulos {
-    grid-area: "subtitulo";
-    font-size: 20px; }
-  .multimedia .multimedia__buttons {
-    grid-area: "button"; }
-
+/*--------------------Multimedia----------------------------*/
 .titulosMultimedia {
   font-size: 30px;
   width: 80%;
   margin: 5% auto 1% auto;
-  color: #e0dddd;
+  color: rgba(224, 221, 221, 0.582);
   font-family: 'Cinzel', serif; }
+
+.multimedia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  grid-auto-rows: 20rem;
+  width: 80%;
+  margin: 2rem auto 0 auto; }
+  .multimedia .multimedia__container {
+    display: flex;
+    flex-direction: column;
+    height: 17.82rem;
+    width: 18.75rem;
+    justify-content: center;
+    align-items: center; }
+    .multimedia .multimedia__container .multimedia__subtitulos {
+      text-align: center;
+      width: 100%; }
+    .multimedia .multimedia__container .multimedia__imagenes {
+      height: 300px; }
 
 /*----------------------Tutorial----------------------*/
 .descripcion {
@@ -284,183 +286,4 @@ footer {
     color: #f0efef;
     font-family: 'Cinzel', serif; }
 
-@media only screen and (max-width: 600px) {
-  /*----------Menu----------------*/
-  .menu__item {
-    font-size: 1rem;
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    width: 100%; }
-  a {
-    color: #d66b12;
-    text-decoration: none; }
-  .menu__lista {
-    list-style-type: none;
-    color: #d66b12;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    background-color: #22222c;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 auto 0 auto;
-    border-radius: 1px;
-    border-style: solid;
-    border-color: #090d33;
-    border-top: none;
-    position: sticky; }
-  /*---------------Index-----------------*/
-  .tituloInicio {
-    text-align: center;
-    color: white;
-    margin-top: 7%;
-    font-family: 'Cinzel', serif;
-    font-size: 1rem; }
-    .tituloInicio p {
-      text-align: center;
-      color: orange;
-      font-size: 1rem;
-      margin-top: 5%;
-      font-family: 'Cinzel', serif; }
-  #descripcionJuego {
-    font-size: 1rem;
-    text-align: center;
-    margin: 75px auto 20px auto;
-    height: auto;
-    width: 70%; }
-  #carouselExampleCaptions {
-    height: auto;
-    width: 100%;
-    margin: 50px auto 0 auto; }
-  #androidDescarga {
-    height: 500px;
-    width: 90%;
-    background-image: url("../Estilo/androidDescarga.jpg");
-    background-repeat: round;
-    margin: 50px auto 50px auto; }
-  #androidButton {
-    margin: 200px 0 0 1050px; }
-  .resenias {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    margin: 50px auto 50px auto; }
-    .resenias .resenias__contenedor {
-      background-color: #07072e;
-      border-radius: 1px;
-      border-style: solid;
-      border-color: orange;
-      height: 5%;
-      width: 100%;
-      margin-bottom: 5%; }
-    .resenias .resenias__listas {
-      background-color: #07072e;
-      color: white; }
-  /*--------------Footer-------------*/
-  footer {
-    background-image: linear-gradient(rgba(11, 5, 31, 0.568), #13133d);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: auto;
-    width: 100%;
-    border-radius: 1px;
-    border-style: solid;
-    border-color: #244747; }
-    footer .footer__texto {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 20%;
-      width: 100%;
-      color: blanchedalmond;
-      text-align: center; }
-    footer .footer__imagenes {
-      display: flex;
-      justify-content: space-evenly;
-      width: 10%;
-      height: auto; } }
-
-/*----------------------Parche----------------------*/
-.descripcion {
-  text-align: center;
-  font-size: 1rem;
-  width: 80%;
-  margin: 0 auto 1rem auto; }
-
-.titulos {
-  color: #db920b;
-  text-align: center;
-  font-size: 1.2rem;
-  font-family: 'Cinzel', serif;
-  margin: 3% 0 3% 0; }
-
-.parches {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "cartas cambios" "cartas cambios" "cartas cambios" "cartas cambios";
-  height: 85rem;
-  width: 100%;
-  margin: 3% auto 0 auto;
-  row-gap: 3%; }
-  .parches .parches__imagenes {
-    grid-area: "cartas"; }
-  .parches .parches__cambios {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    grid-area: "cambios";
-    font-size: 1rem;
-    line-height: 1.2rem;
-    margin-bottom: 1.3rem; }
-    .parches .parches__cambios .parches__subtitulos {
-      color: #db920b;
-      font-family: 'Cinzel', serif; }
-
-/*--------------------Multimedia----------------------------*/
-.multimedia {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr 1fr 1fr);
-  height: 20rem;
-  width: 100%;
-  margin: 1rem auto 0 auto;
-  justify-items: center; }
-
-.titulosMultimedia {
-  font-size: 1.5rem;
-  width: 100%;
-  margin: 1rem auto 0 auto;
-  color: #e0dddd;
-  font-family: 'Cinzel', serif; }
-
-/*-----------Soporte--------------*/
-.soporte {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem auto 0 auto;
-  justify-content: space-between;
-  height: 40rem;
-  width: 100%; }
-  .soporte .soporte__titulo {
-    margin-bottom: 50px;
-    color: #f0efef;
-    font-family: 'Cinzel', serif; }
-  .soporte .soporte__descripcion {
-    text-align: center;
-    width: 100%;
-    color: #f0efef;
-    font-family: 'Nunito Sans', sans-serif; }
-  .soporte .soporte__formulario {
-    height: 20rem;
-    width: 100%;
-    color: #f0efef; }
+/*@import "_mediasQuerys.scss";*/
